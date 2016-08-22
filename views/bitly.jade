@@ -1,0 +1,38 @@
+include mixin-radios
+include mixin-inputs
+include mixin-buttons
+
+
+
++elfFormPanel("Bitly Links Table")
+	div.scroller
+		table.table#tableLinks
++elfRadioPanel("Radio Buttons", "dataSource")
+	+elfPanel("Main Form")
+		+elfFormPanel("Iterate").col-sm-6
+			button#leftButton.btn.btn-success.btn-large(type='button', onclick="elfMovement.left()")
+				span.glyphicon.glyphicon-arrow-left
+				| &nbsp; Left
+			span &nbsp; &nbsp;
+			button#rightButton.btn.btn-success.btn-large(type='button', onclick="elfMovement.right()")
+				| Right &nbsp;
+				span.glyphicon.glyphicon-arrow-right
+			span &nbsp; &nbsp; &nbsp; &nbsp;
+
+		+elfFormPanel("CheckBoxes").col-sm-6
+			+elfCheckBox("Private", "checkBoxPrivate", "checkBoxPrivate")#checkBoxPrivate
+			+elfCheckBox("Archived", "checkBoxArchived", "checkBoxArchived")#checkBoxArchived
++elfPanel("Image Display").elfDiv
+	img(onerror="this.src = 'images/default.png'")#image
++elfFormPanel("Bitly Link Records")
+	+elfInputC("Keyword Link", "keywordLink", "keywordLink")#keywordLink
+	+elfInputC("title", "title", "title")#title.form-control
+	+elfInputC("aggregate link", "aggregateLink", "aggregateLink")#aggregateLink
+	+elfInputC("long url", "longUrl", "longUrl")#longUrl
+	+elfInputC("client id", "clientId", "clientId")#clientId
+	+elfInputC("link", "link", "link")#link.form-control
+	+elfInputC("User Timestamp", "userTs", "userTs")#userTs
+	+elfInputC("Created at", "createdAt", "createdAt")#createdAt
+	+elfInputC("Modified at", "modifiedAt", "modifiedAt")#modifiedAt
+
+pre#displayLinks

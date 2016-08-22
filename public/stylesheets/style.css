@@ -1,0 +1,22 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/concrete_seamless.png); 
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+.elfDiv {
+  border: 1px solid rgba(0, 0, 0, .05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .25);
+  margin: auto;
+  border-radius: 4px;
+}
+
+.scroller {
+  max-height: 220px;
+  overflow: auto;
+}

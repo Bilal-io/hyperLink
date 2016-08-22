@@ -1,0 +1,69 @@
+
+<!-- *************-->
+<!-- Panels-->
+<!-- *************-->
+<!-- **********-->
+<!-- Radio Buttons-->
+<!-- **********-->
+<!-- **********-->
+<!-- CheckBoxes-->
+<!-- **********-->
+<!-- **************-->
+<!-- Vertical Input Controls-->
+<!-- **************-->
+<!-- **************-->
+<!-- Horizontal Input Controls-->
+<!-- **************-->
+<!--
+Created by charlie on 10/29/15.
+
+-->
+<div class="container">
+  <div class="jumbotron elfDiv">
+    <h1></h1>
+    <p>By undefined</p>
+  </div>
+  <div class="panel panel-default panel-primary">
+    <div class="panel-heading">Options</div>
+    <div class="panel-body">
+      <div class="col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">Reset All fields</div>
+          <div class="panel-body">
+            <button type="button" onclick="elfSinglePage.clear()" class="btn btn-primary">Clear All &nbsp;&nbsp;<span class="glyphicon glyphicon-repeat"></span></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="panel panel-default" id="dataSource">
+          <div class="panel-heading">Radios</div>
+          <div class="panel-body">
+            <div role="group" id="dataSource">
+              <div class="radio">
+                <label for="localData"> 
+                  <input type="radio" name="radio" value="localData" id="localData"/><strong>Local Bitly Links</strong>
+                </label>
+              </div>
+              <div class="radio">
+                <label for="bitlyData"> 
+                  <input type="radio" name="radio" value="bitlyData" id="bitlyData"/><strong>Cloud Bitly Links</strong>
+                </label>
+              </div>
+              <div class="radio">
+                <label for="deliciousData"> 
+                  <input type="radio" name="radio" value="deliciousData" id="deliciousData"/><strong>Delicious Links</strong>
+                </label>
+              </div>
+              <div class="radio">
+                <label for="twitterData"> 
+                  <input type="radio" name="radio" value="twitterData" id="twitterData"/><strong>Twitter links</strong>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br/>
+  <div id="displayContainer"></div>
+</div>

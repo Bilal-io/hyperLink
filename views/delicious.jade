@@ -1,0 +1,53 @@
+div.panel.panel-default#delicious-jade
+    div.panel-heading Search
+    div.panel-body
+        div.form-group
+            label(for='subject') Subject
+            input#subject.form-control(type='text', placeholder="subject")
+            br
+            button#search.btn.btn-primary(type="button") Delicous
+
+div.panel.panel-default
+    div.panel-heading Buttons
+    div.panel-body
+        div.col-md-6
+            div.panel.panel-default
+                div.panel-heading#radioButtonDisplay01
+                div.panel-body
+                    div.btn-group.elves(role="group")
+                        .radio
+                            label
+                                input(type='radio', name='radio', value='JavaScript', id='javascript')
+                                |	JavaScript
+                        .radio
+                            label
+                                input(type='radio', name='radio', value='Node', id='node')
+                                |	Node
+                        .radio
+                            label
+                                input(type='radio', name='radio', value='Bootstrap', id='bootstrap')
+                                |	Bootstrap
+        div.col-md-6
+            div.panel.panel-default
+                div.panel-heading CheckBoxes
+                div.panel-body
+                    div
+                        label
+                            input#chJavaScript(type='checkbox', name='check', value='JavaScript' )
+                            |   JavaScript
+                    div
+                        label
+                            input#chNodeJs(type='checkbox', name='check', value='Node' )
+                            |   Node
+                    div
+                        label
+                            input#chBootstrap(type='checkbox', name='check', value='Bootstrap' )
+                            |   Bootstrap
+
+div.panel.panel-default
+    div.panel-heading Result
+    div
+        pre.panel-default
+            ul#viewer
+        pre
+            ul#checkBoxDisplay No boxes are checked

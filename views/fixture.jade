@@ -1,0 +1,24 @@
+include mixin-radios
+include mixin-inputs
+include mixin-buttons
+
+
+block append content
+
+	div.container
+		div.jumbotron.elfDiv
+			h1= title
+			p= 'By ' + author
+
+		+elfPanel("Options").panel-primary
+			div.col-sm-6
+				+elfPanel('Reset All fields')
+					+clearButton('Clear All', 'elfSinglePage.clear()')
+			div.col-sm-6
+				+elfRadioPanel("Radios", "dataSource")#dataSource
+					+elfRadio("Local Bitly Links", "localData")
+					+elfRadio("Cloud Bitly Links", "bitlyData")
+					+elfRadio("Delicious Links", "deliciousData")
+					+elfRadio("Twitter links", "twitterData")
+		br
+		#displayContainer

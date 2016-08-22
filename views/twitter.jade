@@ -1,0 +1,21 @@
+include mixin-radios
+include mixin-inputs
+include mixin-buttons
+
++elfPanel("Twitter Links").elfDiv
+	div.scroller
+		table.table#tableLinks
++elfPanel("Debug", "panel-default").elfDiv
+	+elfInputB("Search Query", "search", "search")#searchQuery
+	+elfInputB("Timeline Query", "timeline", "timeline")#timelineQuery
+	br
+	hr
+	br
+	button.btn.btn-default#getTimeline(type='button') Timeline
+	button.btn.btn-default#search(type='button') Search
+
++elfPanel("Twitter List").elfDiv
+	div
+		ul#tweetList
+	div.scroller
+		pre#tweetData
